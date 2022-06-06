@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnimatedInsetFrameLayout">
+        <attr name="recursion" format="boolean|reference" />
+        <attr name="targetId" format="reference" />
+        <attr name="typeMask" format="flags">
+            <flag name="systemBar" value="1" />
+            <flag name="ime" value="2" />
+        </attr>
+        <attr name="direction" format="flags">
+            <flag name="all" value="15" />
+            <flag name="left" value="1" />
+            <flag name="top" value="2" />
+            <flag name="right" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="animated" format="boolean|reference"/>
+    </declare-styleable>
+</resources>
