@@ -23,7 +23,7 @@ import androidx.core.view.WindowCompat
 import dagger.hilt.android.AndroidEntryPoint
 import io.github.sooakim.github.ui.component.GHTextField
 import io.github.sooakim.github.ui.searchrepo.SearchRepoView
-import io.github.sooakim.github.ui.theme.GithubktTheme
+import io.github.sooakim.github.ui.theme.GithubTheme
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

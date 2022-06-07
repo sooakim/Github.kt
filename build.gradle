@@ -3,10 +3,11 @@ buildscript {
         compose_version = '1.2.0-beta03'
         hilt_version = '2.42'
         retrofit_version = '2.9.0'
+        okhttp_version = '4.9.3'
     }
 }
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+// Top-level build file where you can add conretrofit_versionfiguration options common to all sub-projects/modules.
 plugins {
     id 'com.android.application' version '7.2.1' apply false
     id 'com.android.library' version '7.2.1' apply false

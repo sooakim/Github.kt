@@ -26,6 +26,7 @@ class SearchRepoViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             _state
+                .distinctUntilChangedBy { it.searchText }
                 .filter { it.searchText.isNotBlank() }
                 .debounce(700)
                 .map { repoRepository.fetchRepos(it.searchText).items }

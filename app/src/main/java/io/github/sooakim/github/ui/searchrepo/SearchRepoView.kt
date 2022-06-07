@@ -17,7 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import io.github.sooakim.github.ui.component.GHTextField
-import io.github.sooakim.github.ui.theme.GithubktTheme
+import io.github.sooakim.github.ui.theme.GithubTheme
 import kotlin.coroutines.CoroutineContext
 
 /**
@@ -29,7 +29,7 @@ fun SearchRepoView(
 ){
     val state = searchRepoViewModel.state.collectAsState().value
 
-    GithubktTheme {
+    GithubTheme {
         Surface(
             modifier = Modifier.fillMaxSize()
                     then Modifier.windowInsetsPadding(WindowInsets.systemBars.union(WindowInsets.ime)),
